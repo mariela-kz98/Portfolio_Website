@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photography Gallery</title>
+        <!--Required meta tags-->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width-device-width", initial-scale=1, shrink-to-fit="yes"/>
+
+        <!--Required fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+        <!--Bootstrap and CSS links-->
+        <link rel="stylesheet" type="text/css" href="styleLogIn.css"/>
+    </head>
+    
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+<img class="logo-img" src="logo.png" />
+<!-- <a href="#"><i class="Signup"></i> Sign Up</a>
+  <a href="logIn.html"><i class="Login">Log In</a> -->
+    <a href="#"><i class="Signup"></i> Sign Up</a>
+    <a href="logIn.html"><i class="Login">Log In</a>
+    <a href="blog.html"><i class="Blog">Blog</i></a>
+    
+</div>
+
+    <form class="needs-validation" action="#" method="post">
+        <!-- <div class="imgcontainer">
+          <img src="icon.svg" alt="Avatar" class="avatar">
+        </div> -->
+      
+        <div class="container">
+            <div class="imgcontainer">
+                <img src="icon.svg" alt="Avatar" class="avatar">
+              </div>
+              
+                  <div class="row">
+                    <div class="col">
+                      <label for="validationFirstName">First Name<br></label>
+                      <input type="text" class="form-control is-invalid" id="validationFirstName" placeholder="First Name"  required>
+                      <br></div>
+                      <div class="valid-feedback">
+                          Looks good!
+                     <br></div>
+
+                    <div class="col">
+                      <label for="validationLastName">Last Name<br></label>
+                      <input type="text" class="form-control is-inavalid" id="validationLastName" placeholder="Last name" required>
+                     <br></div>
+                    <div class="valid-feedback">
+                        Looks good!
+                    <br> </div>
+
+                  <div class="col">
+                    <label for=validationEmail>E-mail<br></label>
+                    <input type="email" class="form-control is-inavalid" id="validationEmail" placeholder="Email" required>
+                  </div>
+
+                  <div class="valid-feedback">
+                      Correct e-mail!
+                  <br></div>
+
+                  <div class="col">
+                    <label for="validationUserName">Username<br></label>
+                    <input type="text" class="form-control is-invalid" id="validationUserName" placeholder="Username" required>
+                  </div>
+                  <div class="valid-feedback">
+                    Correct username!
+                  <br></div>
+
+                  <div class="col">
+                      <label for="validationPassword">Password<br></label>
+                      <input type="password" class="form-control is-invalid" id="validationPassword" placeholder="Password" required>
+                  </div>
+                  <div class="valid-feedback">
+                    Correct password!
+                  <br></div>                                      
+                  </div>
+        </div>
+                
+          <!-- <label for="validationUerName"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="userName" required>
+      
+          <label for="validationPassword"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+      
+          <button type="submit">Login</button> -->
+
+
+          <!-- <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label> -->
+        
+        <button class="buttonSubmit" type="submit">Submit<br></button>
+      
+
+          <button type="buttonCancel" class="cancel">Cancel<br></button>
+          <!-- <span class="password">Forgot <a href="#">password?</a></span> -->
+        </div>
+      </form>
+
+      <script>
+        (function(){
+          'use strict';
+          window.addEventListener('load',function()
+          {
+            var forms = document.getElementsByClassName('needs-validation');
+
+            var validation = Array.prototype.filter.call(forms, function(form));
+            form.addEventListener('submit', function(event)
+            {
+              if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated')
+         
+            },false);
+          });
+        },false);        
+
+      </script>

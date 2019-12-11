@@ -1,0 +1,14 @@
+.article{
+    
+    display: block;
+    /* border-block-start: darkgrey,5px;
+    border-block-end-style: dotted; */
+
+
+}
+.h1{
+    font-family: 'Courgette';
+    font-size: 12pt;
+    margin: 5px;
+    color: black;
+}

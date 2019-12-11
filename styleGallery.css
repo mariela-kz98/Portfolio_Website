@@ -1,0 +1,92 @@
+.logo-img{
+    width: 80px;
+    height: 80px;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background: linear-gradient(#999999, #cccccc,#f2f2f2,#ffffff);
+    opacity: 80%;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+
+    float: right;
+    text-align: inherit;
+    margin-top: 20px;
+    margin: 15px;
+    padding:80 px;
+    color: #344038;
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color:rgb(145, 210, 214);
+    opacity: 60%;
+    border-radius: 5px;
+  }
+  
+  /* Current/active navbar link */
+  /* .active {
+    background-color:;
+    opacity: 4%;
+  } */
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+h1{
+    font-family: "Courgette";
+    color: #344038;
+    text-align: center;
+    font-size: 74pt;
+ 
+
+}
+
+img{
+    max-width: 350px;
+    max-height: auto;
+    margin: 3.5px;
+}
+
+body{
+    margin: 0px;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+    
+    
+    
+  }
+  .div{
+      -webkit-animation: fade-in-fwd 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) alternate forwards;
+      animation: fade-in-fwd 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) alternate forwards;
+      
+   }
+ 
+
+p{
+    font-family: "Courgette";
+    color: #344038;
+    text-align: justify;
+    margin-left: 32px;
+    margin-right: 32px;
+
+}
